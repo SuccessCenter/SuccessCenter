@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Home - Success Centers</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Learner
+  * Template URL: https://bootstrapmade.com/learner-bootstrap-course-template/
+  * Updated: Jul 08 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+ <style>
+    :root {
+      --default-font: "Tajawal", sans-serif;
+      --heading-font: "Tajawal", sans-serif;
+      --nav-font: "Tajawal", sans-serif;
+    }
+  </style>
+<body class="contact-page">
+
+<header id="header" class="header d-flex align-items-center sticky-top">
+  <style>
+    /* قلب اتجاه القائمة فقط بدون التأثير على التصميم العام */
+    #navmenu ul {
+      direction: rtl;
+      text-align: right;
+    }
+
+    #navmenu ul li {
+      float: right;
+    }
+
+    #navmenu ul li .dropdown ul {
+      direction: rtl;
+      text-align: right;
+    }
+  </style>
+
+  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+    <!-- اللوغو (يبقى يسار كما هو) -->
+    <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <img src="https://res.cloudinary.com/dcbxuax2c/image/upload/v1752281413/Untitled_design_49_go3izf.png" 
+           alt="شعار الأكاديمية" class="logo-img" style="max-height: 50px;">
+    </a>
+
+    <!-- القائمة (فقط هي يتم قلبها إلى اليمين) -->
+<nav id="navmenu" class="navmenu">
+  <ul>
+    <li><a href="ar.html">الرئيسية</a></li>
+
+    <li class="dropdown">
+      <a href="#"><span>عن الأكاديمية</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+      <ul>
+        <li><a href="about.ar.html">من نحن</a></li>
+        <li><a href="certifications.ar.html">الشهادات</a></li>
+        <li><a href="admission-conditions.ar.html">شروط الالتحاق</a></li>
+        <li><a href="gallery.ar.html">المعرض</a></li>
+      </ul>
+    </li>
+
+    <li><a href="courses.ar.html" class="active">الدورات</a></li>
+    <li><a href="enroll.ar.html">التسجيل</a></li>
+
+    <li class="dropdown">
+      <a href="#"><span>فروعنا</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+      <ul>
+        <li><a href="https://maps.app.goo.gl/piUzvcQwGAeYYaEr9" target="_blank">فرع الرابية</a></li>
+        <li><a href="https://maps.app.goo.gl/Cbf3rAreY6v33aFy6" target="_blank">فرع شارع الجامعة</a></li>
+      </ul>
+    </li>
+
+    <li><a href="contact.ar.html">تواصل معنا</a></li>
+  </ul>
+</nav>
+
+
+    <!-- السويتش (يبقى يمين كما هو) -->
+    <div class="language-switcher d-flex align-items-center ms-3">
+<input type="checkbox" id="lang-toggle" checked>
+      <label for="lang-toggle" class="lang-label">
+        <span class="lang-text en">EN</span>
+        <span class="lang-text ar">AR</span>
+        <span class="lang-ball"></span>
+      </label>
+    </div>
+
+    <!-- زر الهامبرغر -->
+    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
+  </div>
+</header>
+  <main class="main">
+
+<!-- عنوان الصفحة -->
+<div class="page-title light-background" dir="rtl">
+  <div class="container d-lg-flex justify-content-between align-items-center">
+    <h1 class="mb-2 mb-lg-0">الدبلومات</h1>
+    <nav class="breadcrumbs">
+      <ol>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li class="current">الدبلومات</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+<!-- نهاية عنوان الصفحة -->
+
+<!-- قسم الدبلومات -->
+<section id="courses-2" class="courses-2 section" dir="rtl">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row"><!-- تم إزالة flex-row-reverse -->
+
+      <!-- عمود الفلاتر -->
+      <div class="col-lg-3">
+        <div class="course-filters" data-aos="fade-left" data-aos-delay="100">
+          <h4 class="filter-title text-end">تصفية الدبلومات</h4>
+          <div class="filter-group">
+            <h5 class="text-end">التخصص</h5>
+            <div class="filter-options text-end">
+              <label class="filter-checkbox d-block">
+                <input type="checkbox" checked="">
+                <span class="checkmark"></span>
+                جميع التخصصات
+              </label>
+              <label class="filter-checkbox d-block">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                السجلات الطبية
+              </label>
+              <label class="filter-checkbox d-block">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                إدارة المستشفيات
+              </label>
+              <label class="filter-checkbox d-block">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                الأمن السيبراني
+              </label>
+              <label class="filter-checkbox d-block">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                صيانة المركبات الهجينة
+              </label>
+              <label class="filter-checkbox d-block">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                اللغات
+              </label>
+              <label class="filter-checkbox d-block">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                الطيران
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- نهاية عمود الفلاتر -->
+
+      <!-- عمود الدبلومات -->
+      <div class="col-lg-9">
+        <div class="courses-header d-flex justify-content-between align-items-center" data-aos="fade-right" data-aos-delay="100">
+          <div class="search-box position-relative flex-grow-1 me-3">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="ابحث عن دبلوم..." id="search-input" class="form-control text-end">
+            <div class="suggestions-list"></div>
+          </div>
+          <div class="sort-dropdown">
+            <select id="sort-select" class="form-select">
+              <option value="popular">ترتيب حسب: الأكثر شهرة</option>
+              <option value="newest">الأحدث أولاً</option>
+              <option value="duration">المدة: من الأقصر إلى الأطول</option>
+            </select>
+          </div>
+        </div>
+
+<style>
+  .course-card {
+    border: 1px solid #e0e4eb;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    transition: 0.3s;
+  }
+
+  .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+  }
+
+  .course-image img {
+    width: 100%;
+    display: block;
+  }
+
+  .course-content {
+    padding: 18px;
+  }
+
+  .course-meta {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 8px;
+  }
+
+  h3 a {
+    color: #003366;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+
+  h3 a:hover {
+    color: #005c99;
+  }
+
+  .course-content p {
+    margin-bottom: 6px !important;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555;
+  }
+
+  /* قائمة البوينت */
+  .course-features {
+    list-style: none;
+    padding: 0;
+    margin-top: 6px !important;
+  }
+
+  .course-features li {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-bottom: 5px !important;
+    color: #333;
+  }
+
+  /* سهم بوينت SVG */
+  .course-features li::before {
+    content: url("data:image/svg+xml;utf8,<svg width='10' height='10' viewBox='0 0 24 24' fill='%23003366' xmlns='http://www.w3.org/2000/svg'><path d='M8 5l8 7-8 7V5z'/></svg>");
+    margin-left: 8px;
+    margin-top: 2px;
+  }
+
+  .btn-course {
+    background-color: #003366;
+    color: white;
+    padding: 9px;
+    border-radius: 6px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+
+  .btn-course:hover {
+    background-color: #005c99;
+  }
+
+  .course-item {
+    margin-bottom: 28px;
+  }
+  .course-meta .duration {
+  font-weight: 700 !important;
+  color: #003366;
+}
+
+</style>
+
+
+<div class="courses-grid mt-4" data-aos="fade-up" data-aos-delay="200">
+  <div class="row">
+
+    <!-- دبلوم التمريض -->
+    <div class="col-lg-4 col-md-6 course-item" data-field="السجلات الطبية">
+      <div class="course-card text-end">
+
+        <div class="course-image">
+          <img src="https://res.cloudinary.com/dzy5fjomg/image/upload/v1760145598/istockphoto-532548555-612x612_me2io8.jpg" alt="">
+        </div>
+
+        <div class="course-content">
+
+          <div class="course-meta d-flex justify-content-between">
+            <span class="level">دبلوم</span>
+            <span class="duration">سنتان</span>
+          </div>
+
+          <h3><a href="#">دبلوم التمريض</a></h3>
+          <p>تطوير مهارات متقدمة في مجالات التمريض المتخصصة مثل رعاية حديثي الولادة والإدارة الصحية.</p>
+
+          <ul class="course-features">
+            <li>تطوير المهارات</li>
+            <li>إعداد القادة</li>
+            <li>رفع الكفاءة المهنية</li>
+          </ul>
+
+          <a href="Nursing.ar.html" class="btn-course d-block mb-2">تفاصيل أكثر</a>
+          <a href="enroll.ar.html" class="btn-course d-block">سجل الآن</a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- دبلوم الأمن السيبراني -->
+    <div class="col-lg-4 col-md-6 course-item" data-field="الأمن السيبراني">
+      <div class="course-card text-end">
+
+        <div class="course-image">
+          <img src="https://res.cloudinary.com/dcbxuax2c/image/upload/v1752253292/3_jmzidg.png" alt="">
+        </div>
+
+        <div class="course-content">
+
+          <div class="course-meta d-flex justify-content-between">
+            <span class="level">دبلوم</span>
+            <span class="duration">سنتان</span>
+          </div>
+
+          <h3><a href="#">دبلوم الأمن السيبراني</a></h3>
+          <p>تعلم حماية الأنظمة والشبكات والبيانات من خلال تدريب عملي متقدم في أمن المعلومات.</p>
+
+          <ul class="course-features">
+            <li>أمن الشبكات</li>
+            <li>اختبار الاختراق</li>
+            <li>التحقيقات الرقمية</li>
+          </ul>
+
+          <a href="Cybersecurity.ar.html" class="btn-course d-block mb-2">تفاصيل أكثر</a>
+          <a href="enroll.ar.html" class="btn-course d-block">سجل الآن</a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- دبلوم إدارة المستشفيات -->
+    <div class="col-lg-4 col-md-6 course-item" data-field="إدارة المستشفيات">
+      <div class="course-card text-end">
+
+        <div class="course-image">
+          <img src="https://res.cloudinary.com/dzy5fjomg/image/upload/v1760145192/doctor-using-digital-health-technology-healthcare-management-patient-medical-records-interface-interacts-managing-389264796_a5mtlq.webp" alt="">
+        </div>
+
+        <div class="course-content">
+
+          <div class="course-meta d-flex justify-content-between">
+            <span class="level">دبلوم</span>
+            <span class="duration">سنتان</span>
+          </div>
+
+          <h3><a href="#">دبلوم إدارة المستشفيات والسجلات الطبية</a></h3>
+          <p>يؤهل المتدربين لإدارة المنشآت الصحية وإدارة السجلات والمعلومات الطبية بكفاءة عالية.</p>
+
+          <ul class="course-features">
+            <li>مهارات إدارية</li>
+            <li>إدارة السجلات</li>
+            <li>إدارة العمليات</li>
+          </ul>
+
+          <a href="HospitalManagement.ar.html" class="btn-course d-block mb-2">تفاصيل أكثر</a>
+          <a href="enroll.ar.html" class="btn-course d-block">سجل الآن</a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- دبلوم الطيران -->
+    <div class="col-lg-4 col-md-6 course-item" data-field="الطيران">
+      <div class="course-card text-end">
+
+        <div class="course-image">
+          <img src="https://res.cloudinary.com/dzy5fjomg/image/upload/v1760144946/istockphoto-1307890143-612x612_uprbdp.jpg" alt="">
+        </div>
+
+        <div class="course-content">
+
+          <div class="course-meta d-flex justify-content-between">
+            <span class="level">دبلوم</span>
+            <span class="duration">سنتان</span>
+          </div>
+
+          <h3><a href="#">دبلوم إدارة المطارات ودراسات الطيران</a></h3>
+          <p>يُعِد الطلاب للعمل في تشغيل المطارات وإدارة شركات الطيران وخدمات الشحن الجوي.</p>
+
+          <ul class="course-features">
+            <li>تشغيل المطارات</li>
+            <li>أنظمة الحجز</li>
+            <li>إدارة السياحة والطيران</li>
+          </ul>
+
+          <a href="AirportManagement.ar.html" class="btn-course d-block mb-2">تفاصيل أكثر</a>
+          <a href="enroll.ar.html" class="btn-course d-block">سجل الآن</a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- دبلوم صيانة المركبات الهجينة -->
+    <div class="col-lg-4 col-md-6 course-item" data-field="صيانة المركبات الهجينة">
+      <div class="course-card text-end">
+
+        <div class="course-image">
+          <img src="https://res.cloudinary.com/dcbxuax2c/image/upload/v1752253294/5_epv8od.png" alt="">
+        </div>
+
+        <div class="course-content">
+
+          <div class="course-meta d-flex justify-content-between">
+            <span class="level">دبلوم</span>
+            <span class="duration">سنتان</span>
+          </div>
+
+          <h3><a href="#">دبلوم صيانة المركبات الكهربائية والهجينة</a></h3>
+          <p>تدريب متخصص للفنيين لصيانة وإصلاح المركبات الكهربائية والهجينة الحديثة.</p>
+
+          <ul class="course-features">
+            <li>أنظمة الدفع الكهربائي</li>
+            <li>أنظمة البطاريات عالية الجهد</li>
+            <li>أنظمة التحكم الهجينة</li>
+          </ul>
+
+          <a href="HybridMaintenance.ar.html" class="btn-course d-block mb-2">تفاصيل أكثر</a>
+          <a href="enroll.ar.html" class="btn-course d-block">سجل الآن</a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- دبلوم اللغة الإسبانية -->
+    <div class="col-lg-4 col-md-6 course-item" data-field="اللغات">
+      <div class="course-card text-end">
+
+        <div class="course-image">
+          <img src="https://res.cloudinary.com/dcbxuax2c/image/upload/v1752253309/11_qyqbat.png" alt="">
+        </div>
+
+        <div class="course-content">
+
+          <div class="course-meta d-flex justify-content-between">
+            <span class="level">دبلوم</span>
+            <span class="duration">سنة واحدة</span>
+          </div>
+
+          <h3><a href="#">دبلوم اللغة الإسبانية</a></h3>
+          <p>تعلم اللغة الإسبانية مع مدربين خبراء وتدريب تفاعلي مكثف.</p>
+
+          <ul class="course-features">
+            <li>مهارات المحادثة</li>
+            <li>فهم ثقافي</li>
+            <li>تطوير الطلاقة</li>
+          </ul>
+
+          <a href="SpanishLanguage.ar.html" class="btn-course d-block mb-2">تفاصيل أكثر</a>
+          <a href="enroll.ar.html" class="btn-course d-block">سجل الآن</a>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </main>
+
+<footer id="footer" class="footer accent-background" style="
+  direction: rtl;
+  background: #fff7f0;
+  padding: 40px 0;
+  border-top: 3px solid #ff8c42;
+  box-shadow: 0 -4px 10px rgba(255, 140, 66, 0.15);
+">
+
+  <div class="container footer-top" style="padding-bottom: 30px;">
+    <div class="row gy-4" style="gap: 30px;"> <!-- إضافة gap لزيادة المسافة بين الأعمدة -->
+
+      <!-- عن المركز -->
+      <div class="col-lg-3 col-md-6 footer-about" style="text-align: right; padding-right: 20px;">
+        <a href="index.html" class="logo d-flex align-items-center" style="text-decoration: none;">
+          <span class="sitename" style="font-size: 1.4rem; font-weight: 700; color: #ff7a22;">مركز الناجحون</span>
+        </a>
+        <p style="margin-top: 10px; color: #444;">
+          مركز الناجحون هو شريكك في النمو، مكرس لمساعدتك في تحقيق أهدافك الأكاديمية والمهنية من خلال برامج وخدمات دعم متخصصة.
+        </p>
+
+        <div class="social-links d-flex mt-4" style="gap: 12px;">
+          <a href="https://web.facebook.com/SuccessCenter.Jo/?_rdc=1&_rdr" style="color: #ff7a22; font-size: 1.2rem;"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/successcenter.jo/?hl=en" style="color: #ff7a22; font-size: 1.2rem;"><i class="bi bi-instagram"></i></a>
+          <a href="https://jo.linkedin.com/company/success-center-jo?trk=public_jobs_topcard_logo" style="color: #ff7a22; font-size: 1.2rem;"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <!-- الروابط السريعة -->
+      <div class="col-lg-2 col-md-6 footer-links" style="text-align: right; padding-right: 20px;">
+        <h4 style="color: #ff7a22;">الروابط السريعة</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="ar.html" style="color: #444; text-decoration: none;">الرئيسية</a></li>
+          <li><a href="about.ar.html" style="color: #444; text-decoration: none;">من نحن</a></li>
+          <li><a href="courses.ar.html" style="color: #444; text-decoration: none;">الدورات</a></li>
+          <li><a href="contact.ar.html" style="color: #444; text-decoration: none;">اتصل بنا</a></li>
+          <li><a href="certifications.ar.html" style="color: #444; text-decoration: none;">الشهادات</a></li>
+        </ul>
+      </div>
+
+      <!-- دوراتنا -->
+      <div class="col-lg-2 col-md-6 footer-links" style="text-align: right; padding-right: 20px;">
+        <h4 style="color: #ff7a22;">دوراتنا</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="EnglishLanguage.html" style="color: #444; text-decoration: none;">اللغة الإنجليزية</a></li>
+          <li><a href="GermanLanguage.html" style="color: #444; text-decoration: none;">اللغة الألمانية</a></li>
+          <li><a href="SpanishLanguage.html" style="color: #444; text-decoration: none;">اللغة الإسبانية</a></li>
+          <li><a href="Cybersecurity.html" style="color: #444; text-decoration: none;">الأمن السيبراني</a></li>
+          <li><a href="AirportManagement.html" style="color: #444; text-decoration: none;">إدارة المطارات</a></li>
+          <li><a href="HospitalManagement.html" style="color: #444; text-decoration: none;">إدارة المستشفيات</a></li>
+          <li><a href="HybridMaintenance.html" style="color: #444; text-decoration: none;">الصيانة الهجينة</a></li>
+          <li><a href="Nursing.html" style="color: #444; text-decoration: none;">التمريض</a></li>
+        </ul>
+      </div>
+
+      <!-- تواصل معنا -->
+      <div class="col-lg-3 col-md-6 footer-contact text-center text-md-start" 
+        style="text-align: right !important; direction: rtl; padding-right: 20px;">
+
+        <h4 style="color: #ff7a22;">تواصل معنا</h4>
+
+        <!-- تحديد اللون الرمادي لجميع النصوص -->
+        <p style="color: #777 !important;">عمان - الأردن</p>
+        <p style="color: #777 !important;">فرع شارع الجامعة</p>
+        <p><strong style="color: #777 !important;">البريد الإلكتروني:</strong> <span style="color: #777 !important;">info@successcenter1.com</span></p>
+        <p><strong style="color: #777 !important;">الهاتف:</strong> <span style="color: #777 !important;">062003038</span></p>
+        <p><strong style="color: #777 !important;">متابعة:</strong> <span style="color: #777 !important;">062005040</span></p>
+<p><strong style="color: #777 !important;">ساعات العمل:</strong> <span style="color: #777 !important;">جميع الأيام من 8 صباحًا إلى 10 مساءً</span></p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- تعديل اللون إلى الأسود في الفقرة النهائية -->
+  <div class="container copyright text-center mt-4" 
+    style="padding-top: 10px; border-top: 1px solid #ffd2b2;">
+    <p style="color: #000 !important;">© <strong class="sitename">مركز الناجحون</strong> جميع الحقوق محفوظة</p>
+  </div>
+<!-- Added Developer and Supporter Info -->
+<div class="container developer-info text-center mt-4">
+  <p style="color: #444;"><strong>Developed by CTO of Success Center</strong> – <strong style="color: #703005;">Abdulhadi Abu Ashebah</strong></p>
+  <p style="color: #444;"><strong>Supported by</strong> <a href="https://www.instagram.com/eqtech_jo/" target="_blank" style="color: #444; text-decoration: none; font-weight: bold;">EQTech Jordan</a></p>
+</div>
+
+  
+</footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput = document.getElementById("search-input");
+  const sortSelect = document.getElementById("sort-select");
+  const checkboxes = document.querySelectorAll(".filter-checkbox input");
+  const courseItems = document.querySelectorAll(".course-item");
+  const suggestionsList = document.querySelector(".suggestions-list");
+  const container = document.querySelector(".courses-grid .row");
+
+  suggestionsList.style.position = "absolute";
+  suggestionsList.style.backgroundColor = "#fff";
+  suggestionsList.style.border = "1px solid #ddd";
+  suggestionsList.style.width = "100%";
+  suggestionsList.style.maxHeight = "200px";
+  suggestionsList.style.overflowY = "auto";
+  suggestionsList.style.zIndex = "999";
+  suggestionsList.style.display = "none";
+
+  function filterCourses() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const activeFields = Array.from(checkboxes)
+      .filter(chk => chk.checked && chk.value !== "")
+      .map(chk => chk.parentElement.textContent.trim());
+
+    courseItems.forEach(course => {
+      const title = course.querySelector("h3 a").textContent.toLowerCase();
+      const field = course.dataset.field;
+
+      const matchesSearch = title.includes(searchTerm);
+      const matchesField = activeFields.length === 0 || activeFields.includes("جميع التخصصات") || activeFields.includes(field);
+
+      if (matchesSearch && matchesField) {
+        course.style.display = "";
+        setTimeout(() => {
+          course.style.opacity = "1";
+          course.style.pointerEvents = "auto";
+        }, 10);
+        course.style.transition = "opacity 0.3s ease-in-out";
+      } else {
+        course.style.opacity = "0";
+        course.style.pointerEvents = "none";
+        setTimeout(() => { course.style.display = "none"; }, 300);
+      }
+    });
+  }
+
+  function updateSuggestions(showAll = false) {
+    const searchTerm = searchInput.value.toLowerCase();
+    suggestionsList.innerHTML = "";
+
+    let matches = Array.from(courseItems)
+      .filter(c => c.style.display !== "none")
+      .map(course => course.querySelector("h3 a").textContent);
+
+    if (!showAll) {
+      matches = matches.filter(title => title.toLowerCase().includes(searchTerm));
+    }
+
+    matches.slice(0, 10).forEach(match => {
+      const div = document.createElement("div");
+      div.className = "suggestion-item";
+      div.textContent = match;
+      div.style.padding = "5px 10px";
+      div.style.cursor = "pointer";
+
+      div.addEventListener("mouseover", () => div.style.backgroundColor = "#f0f0f0");
+      div.addEventListener("mouseout", () => div.style.backgroundColor = "#fff");
+      div.addEventListener("click", () => {
+        searchInput.value = match;
+        filterCourses();
+        suggestionsList.style.display = "none";
+      });
+
+      suggestionsList.appendChild(div);
+    });
+
+    suggestionsList.style.display = matches.length ? "block" : "none";
+  }
+
+  function sortCourses() {
+    const itemsArray = Array.from(courseItems).filter(item => item.style.display !== "none");
+    const sortBy = sortSelect.value;
+
+    itemsArray.sort((a, b) => {
+      if (sortBy === "duration") {
+        const durA = parseInt(a.querySelector(".duration").textContent) || 0;
+        const durB = parseInt(b.querySelector(".duration").textContent) || 0;
+        return durA - durB;
+      }
+      return 0;
+    });
+
+    itemsArray.forEach(item => container.appendChild(item));
+  }
+
+  searchInput.addEventListener("input", () => {
+    updateSuggestions();
+    filterCourses();
+    sortCourses();
+  });
+
+  searchInput.addEventListener("focus", () => updateSuggestions(true));
+  searchInput.addEventListener("blur", () => setTimeout(() => suggestionsList.style.display = "none", 200));
+
+  checkboxes.forEach(chk => chk.addEventListener("change", () => {
+    filterCourses();
+    sortCourses();
+  }));
+
+  sortSelect.addEventListener("change", sortCourses);
+
+  filterCourses();
+  sortCourses();
+});
+</script>
+</html>

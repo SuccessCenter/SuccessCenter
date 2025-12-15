@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chatbot - Success Center (Widget)</title>
+  <style>
+  body{font-family:'Segoe UI',Tahoma,Arial,sans-serif;background:transparent}
+  :root{
+    --primary:#1e88e5;
+    --primary-light:#64b5f6;
+    --bg:#ffffff;
+    --panel:#fafafa;
+    --text:#0d1b2a;
+    --bubble-user:#e3f2fd;
+    --bubble-bot:#f6f6f6;
+    --border:#e0e0e0;
+  }
+
+  /* Launcher */
+  .sc-chat-launcher{position:fixed;bottom:24px;left:24px;z-index:9999}
+  .sc-btn{background:var(--primary);color:white;border:none;padding:12px 18px;border-radius:50px;font-size:15px;cursor:pointer;box-shadow:0 4px 14px rgba(30,136,229,.3)}
+  .sc-btn:hover{background:var(--primary-light)}
+
+  /* Window */
+  .sc-window{position:fixed;bottom:90px;left:24px;width:360px;max-width:92vw;height:520px;background:var(--bg);border-radius:16px;box-shadow:0 10px 28px rgba(0,0,0,.18);overflow:hidden;display:flex;flex-direction:column;z-index:9999;border:1px solid var(--border)}
+  .sc-header{padding:14px 16px;background:#ffffff;border-bottom:1px solid var(--border);display:flex;gap:8px;align-items:center}
+  .sc-title{font-size:17px;font-weight:700;color:var(--text)}
+  .sc-sub{font-size:13px;color:#4a4a4a}
+
+  .sc-body{padding:14px;flex:1;overflow:auto;display:flex;flex-direction:column;gap:12px;background:#fafafa}
+
+  .sc-bubble{max-width:85%;padding:10px 14px;border-radius:12px;line-height:1.5;font-size:14px}
+  .sc-user{align-self:flex-end;background:var(--bubble-user);color:#0d47a1;border:1px solid #bbdefb}
+  .sc-bot{align-self:flex-start;background:var(--bubble-bot);color:var(--text);border:1px solid var(--border)}
+
+  .sc-buttons{display:flex;flex-direction:column;gap:8px;margin-top:6px}
+  .sc-option{background:white;border:1px solid var(--border);padding:10px 12px;border-radius:10px;cursor:pointer;text-align:center;font-size:14px}
+  .sc-option:hover{background:var(--primary-light);color:white;border-color:var(--primary-light)}
+
+  .sc-footer{padding:12px;background:white;border-top:1px solid var(--border);display:flex;gap:8px}
+  .sc-input{flex:1;border:1px solid var(--border);padding:10px 12px;border-radius:10px}
+  .sc-send{background:var(--primary);color:white;border:none;padding:10px 14px;border-radius:10px;cursor:pointer}
+  .sc-send:hover{background:var(--primary-light)}
+
+  @media (max-width:520px){.sc-window{width:94vw;left:3vw;right:3vw;height:70vh;bottom:84px}}
+
+  .fade-in{animation:fadeIn .28s ease}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- Launcher -->
+<div class="sc-chat-launcher">
+  <button class="sc-btn" id="sc-launch">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 15a2 2 0 0 1-2 2H9l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10z" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>مساعدة</span>
+  </button>
+</div>
+
+<!-- Chat window (hidden by default) -->
+<div class="sc-window" id="sc-window" style="display:none;">
+  <div class="sc-header">
+    <div>
+      <div class="sc-title">مساعد أكاديمية الناجحون</div>
+      <div class="sc-sub">اضغط على الأزرار للرد أو اكتب سؤالك</div>
+    </div>
+    <div style="margin-inline-start:auto">
+      <button id="sc-close" class="sc-btn" style="padding:8px 10px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.04);color:white">إغلاق</button>
+    </div>
+  </div>
+
+  <div class="sc-body" id="sc-body">
+    <!-- messages go here -->
+  </div>
+
+  <div class="sc-footer">
+    <input id="sc-input" class="sc-input" placeholder="اكتب هنا..." aria-label="اكتب سؤالك" />
+    <button id="sc-send" class="sc-send">إرسال</button>
+  </div>
+</div>
+
+<script>
+// ====== Data: conversation flows (editable) ======
+const flows = {
+  start: {
+    text: 'أهلاً! كيف أقدر أساعدك اليوم؟ اختر خيار أو اكتب سؤالك:',
+    options: [
+      {id:'home', label:'الرئيسية'},
+      {id:'about', label:'عن الأكاديمية'},
+      {id:'courses', label:'الكورسات والدبلومات'},
+      {id:'enroll', label:'التسجيل'},
+      {id:'branches', label:'فروعنا'},
+      {id:'contact', label:'تواصل معنا'}
+    ]
+  },
+  home: {
+    text: 'الصفحة الرئيسية تحتوي نبذة عن الأكاديمية، الدبلومات المميزة، وآراء الطلاب. تود الانتقال للصفحة؟',
+    link: 'https://successcenter1.com/',
+    options:[{id:'open_link',label:'اذهب إلى الصفحة'},{id:'start',label:'العودة'}]
+  },
+  about: {
+    text: 'عن الأكاديمية: برامج معتمدة، تعليم أونلاين وحضوري. هل تريد معلومات عن الشهادات أو المعرض؟',
+    options:[{id:'certs',label:'الشهادات'},{id:'gallery',label:'المعرض'},{id:'start',label:'العودة'}]
+  },
+  certs:{text:'نظام الشهادات: يذكر الموقع شهادات دولية واعتمادات. لا توجد صفحة مفصلة حالياً.', options:[{id:'start',label:'العودة'}]},
+  gallery:{text:'المعرض: صور عن الفعاليات والكورسات — قد توجه إلى صفحة معرض أو صور على الصفحة الرئيسية.', options:[{id:'start',label:'العودة'}]},
+  courses:{
+    text:'لدينا دبلومات مميزة — اختر لمحة سريعة:',
+    options:[{id:'d_nursing',label:'دبلومة تمريض'},{id:'d_cyber',label:'دبلومة أمن سيبراني'},{id:'d_german',label:'دبلومة ألماني'},{id:'start',label:'العودة'}]
+  },
+  d_nursing:{text:'دبلومة تمريض — 2 سنوات. للاطلاع على التفاصيل والتسجيل: ', link:'https://successcenter1.com/courses.html#nursing', options:[{id:'open_link',label:'عرض التفاصيل'},{id:'courses',label:'العودة إلى الدورات'}]},
+  d_cyber:{text:'دبلومة أمن سيبراني — 2 سنوات. للاطلاع: ', link:'https://successcenter1.com/courses.html#cyber', options:[{id:'open_link',label:'عرض التفاصيل'},{id:'courses',label:'العودة إلى الدورات'}]},
+  d_german:{text:'دبلومة اللغة الألمانية — 1 سنة. للاطلاع: ', link:'https://successcenter1.com/courses.html#german', options:[{id:'open_link',label:'عرض التفاصيل'},{id:'courses',label:'الالعودة إلى الدورات'}]},
+  enroll:{text:'التسجيل: يمكنك تعبئة نموذج التسجيل أو زيارة صفحة التسجيل.', link:'https://successcenter1.com/enroll.html', options:[{id:'open_link',label:'اذهب للتسجيل'},{id:'start',label:'العودة'}]},
+  branches:{text:'لدينا فرعين: فرع الرابية وفرع شارع الجامعة. أي فرع تريد؟', options:[{id:'rabieh',label:'فرع الرابية'},{id:'univ',label:'فرع شارع الجامعة'},{id:'start',label:'العودة'}]},
+  rabieh:{text:'فرع الرابية — افتح الخريطة لمعرفة الموقع والاتصال.', link:'https://maps.google.com?q=Rabieh+Amman', options:[{id:'open_link',label:'افتح الخريطة'},{id:'branches',label:'العودة'}]},
+  univ:{text:'فرع شارع الجامعة — افتح الخريطة لمعرفة الموقع والاتصال.', link:'https://maps.google.com?q=University+Street+Amman', options:[{id:'open_link',label:'افتح الخريطة'},{id:'branches',label:'العودة'}]},
+  contact:{text:'تواصل معنا عبر البريد info@successcenter1.com أو الهاتف 062003038. هل تريد فتح صفحة التواصل؟', link:'https://successcenter1.com/contact.html', options:[{id:'open_link',label:'صفحة تواصل'},{id:'start',label:'العودة'}]}
+};
+
+// ====== UI helpers ======
+const body = document.getElementById('sc-body');
+const input = document.getElementById('sc-input');
+const send = document.getElementById('sc-send');
+
+function appendBot(text, options=[], link){
+  const wrap = document.createElement('div'); wrap.className='fade-in';
+  const bubble = document.createElement('div'); bubble.className='sc-bubble sc-bot'; bubble.innerHTML = `<div>${text}</div>`;
+  if(link){
+    const a = document.createElement('a'); a.href = link; a.target='_blank'; a.className='sc-link'; a.textContent='اذهب إلى الصفحة';
+    bubble.appendChild(a);
+  }
+  wrap.appendChild(bubble);
+  if(options && options.length){
+    const bwrap = document.createElement('div'); bwrap.className='sc-buttons';
+    options.forEach(o=>{
+      const btn = document.createElement('button'); btn.className='sc-option'; btn.textContent = o.label; btn.dataset.id = o.id;
+      btn.addEventListener('click',()=>handleOption(o.id));
+      bwrap.appendChild(btn);
+    });
+    wrap.appendChild(bwrap);
+  }
+  body.appendChild(wrap); body.scrollTop = body.scrollHeight;
+}
+
+function appendUser(text){
+  const d = document.createElement('div'); d.className='fade-in';
+  const b = document.createElement('div'); b.className='sc-bubble sc-user'; b.textContent = text;
+  d.appendChild(b); body.appendChild(d); body.scrollTop = body.scrollHeight;
+}
+
+function showFlow(id){
+  const node = flows[id];
+  if(!node) { appendBot('عذراً، لم أفهم هذا الاختيار. اختر من الأزرار المتاحة أو اكتب سؤالك.'); return; }
+  appendBot(node.text, node.options || [], node.link);
+}
+
+function handleOption(id){
+  // special open_link action
+  if(id==='open_link'){
+    // find the most recent bot message with link
+    const recent = Object.values(flows).find(f=>f && f.link && f.text && f.options && f.options.some(o=>o.id==='open_link'));
+    // try to open the currently visible flow link by searching last node displayed in body
+    // simple approach: if last bot bubble had a link element we open it
+    const links = body.querySelectorAll('.sc-link');
+    if(links.length){ window.open(links[links.length-1].href, '_blank'); return; }
+    alert('لا يوجد رابط لفتحه حالياً');
+    return;
+  }
+  appendUser(document.querySelector('.sc-option[data-id="'+id+'"]')?.textContent || id);
+  // small delay to simulate typing
+  setTimeout(()=>showFlow(id),200);
+}
+
+// event handlers
+document.getElementById('sc-launch').addEventListener('click',()=>{
+  document.getElementById('sc-window').style.display='flex';
+  document.getElementById('sc-launch').style.display='none';
+  showFlow('start');
+});
+document.getElementById('sc-close').addEventListener('click',()=>{
+  document.getElementById('sc-window').style.display='none';
+  document.getElementById('sc-launch').style.display='inline-flex';
+  body.innerHTML='';
+});
+
+send.addEventListener('click',()=>{
+  const text = input.value.trim(); if(!text) return; appendUser(text); input.value='';
+  // simple keyword routing (best‑effort)
+  const k = text.toLowerCase();
+  if(k.includes('دبلوم') || k.includes('دورة') || k.includes('كور')) showFlow('courses');
+  else if(k.includes('رابعة')||k.includes('الرابية')||k.includes('rabieh')) showFlow('rabieh');
+  else if(k.includes('تسجيل')) showFlow('enroll');
+  else if(k.includes('تواصل')||k.includes('اتصال')) showFlow('contact');
+  else showFlow('start');
+});
+
+// enter key
+input.addEventListener('keydown',(e)=>{ if(e.key==='Enter'){ send.click(); }});
+
+// Initialize minimal greeting but hidden until open
+</script>
+</body>
+</html>
