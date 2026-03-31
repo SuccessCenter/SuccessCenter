@@ -1,448 +1,704 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Enroll - Learner Bootstrap Template</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Enroll - Learner Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
+    <!-- =======================================================
   * Template Name: Learner
   * Template URL: https://bootstrapmade.com/learner-bootstrap-course-template/
   * Updated: Jul 08 2025 with Bootstrap v5.3.7
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+  </head>
 
-<body class="enroll-page">
+  <body class="enroll-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center"
+      >
+        <!-- الشعار -->
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <img
+            src="https://res.cloudinary.com/dcbxuax2c/image/upload/v1752281413/Untitled_design_49_go3izf.png"
+            alt="Academy Logo"
+            class="logo-img"
+          />
+        </a>
 
-<header id="header" class="header d-flex align-items-center sticky-top">
-  <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
-    <!-- الشعار -->
-    <a href="index.html" class="logo d-flex align-items-center me-auto">
-      <img src="https://res.cloudinary.com/dcbxuax2c/image/upload/v1752281413/Untitled_design_49_go3izf.png" 
-           alt="Academy Logo" class="logo-img" style="max-height: 50px;">
-    </a>
-
-    <!-- القائمة -->
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-
-        <li class="dropdown">
-          <a href="#"><span>About the Academy</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <!-- القائمة -->
+        <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="certifications.html">Certifications</a></li>
-            <li><a href="admission-conditions.html">Admission Conditions</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+
+            <li class="dropdown">
+              <a href="#"
+                ><span>About the Academy</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li>
+                  <a href="admission-conditions.html">Admission Conditions</a>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+              </ul>
+            </li>
+
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="enroll.html">Enroll</a></li>
+
+            <li class="dropdown">
+              <a href="#"
+                ><span>Our Branches</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li>
+                  <a
+                    href="https://maps.app.goo.gl/piUzvcQwGAeYYaEr9"
+                    target="_blank"
+                    >Rabieh Branch</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://maps.app.goo.gl/Cbf3rAreY6v33aFy6"
+                    target="_blank"
+                    >University Street Branch</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
-        </li>
-
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="enroll.html">Enroll</a></li>
-
-        <li class="dropdown">
-          <a href="#"><span>Our Branches</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="https://maps.app.goo.gl/piUzvcQwGAeYYaEr9" target="_blank">Rabieh Branch</a></li>
-            <li><a href="https://maps.app.goo.gl/Cbf3rAreY6v33aFy6" target="_blank">University Street Branch</a></li>
-          </ul>
-        </li>
-
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-
-    <!-- سويتش اللغة -->
-    <div class="language-switcher d-flex align-items-center">
-      <input type="checkbox" id="lang-toggle">
-      <label for="lang-toggle" class="lang-label">
-        <span class="lang-text en">EN</span>
-        <span class="lang-text ar">AR</span>
-        <span class="lang-ball"></span>
-      </label>
-    </div>
-
-    <!-- زر الهامبرغر -->
-    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-
-  </div>
-</header>
-
-  <main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title light-background">
-      <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Enrollment</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Enroll</li>
-          </ol>
         </nav>
-      </div>
-    </div><!-- End Page Title -->
 
-    <!-- Enroll Section -->
-    <section id="enroll" class="enroll section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-<section class="payment-methods-section">
-        <div class="text-center mb-4">
-        <h3>Choose Your Preferred Payment Method</h3>
-        <p>Please select one of the available payment options below to proceed with your enrollment.</p>
-      </div>
-  <div class="payment-buttons">
-    <button class="payment-btn" data-target="direct-payment">
-      Direct Payment
-      <div class="payment-logos">
-        <img src="https://res.cloudinary.com/dcbxuax2c/image/upload/v1755048717/final_cliq_logo-02_1_0_hxdlda.png" alt="Cliq Logo" />
-        <img src="https://res.cloudinary.com/dcbxuax2c/image/upload/v1755047158/zain-cash-logo-png_seeklogo-519935_spuvla.png" alt="Zain Cash Logo" />
-      </div>
-    </button>
-    <button class="payment-btn" data-target="western-union">
-      Western Union
-      <img src="https://res.cloudinary.com/dcbxuax2c/image/upload/v1755046752/217427_iegk5j.png" alt="Western Union Logo" />
-    </button>
-    <button class="payment-btn" data-target="visa-mastercard">
-      Visa / MasterCard
-      <div class="payment-logos">
-        <img src="https://res.cloudinary.com/dcbxuax2c/image/upload/v1755048798/mastercard-visa-cards-logos-icons-701751695036083sdqsk5ncvn_vftzaq.png" alt="Visa Logo" />
-      </div>
-    </button>
-  </div>
-
-  <!-- Payment details section as you gave, with added IDs for scroll targets -->
-
-  <section id="direct-payment" class="payment-details">
-    <h2>Payment Methods – Local (Jordan)</h2>
-    <ul>
-      <li> مركز الناجحون الدولي الثقافي
-        <strong>Cliq</strong>
-         <li>Bank Name : <code>Bank Of Etihad </code></li>
-          <li>Alias: <code>>Successsc✔️</code></li>
-           <li>Name of account: <code>>مركز الناجحون الدولي الثقافي</code></li>
-
-        <ul>
-        <strong>Bank Transfer – Bank Al Etihad</strong>
-        <ul>
-          <li>Account Number: <code>0160182706415101</code></li>
-          <li>IBAN: <code>JO66UBSI1090000160182706415101</code></li>
-          <li>SWIFT: <code>UBSIJOAXXXX</code></li>
-          <li>Name: Al-Najehoun International Cultural Center</li>
-          <li>Address: Jordan – Amman – University St., Building 5 – First Floor</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Bank Transfer – Arab Bank</strong>
-        <ul>
-          <li>Account Number: <code>0192142305500</code></li>
-          <li>IBAN: <code>JO45ARAB1920000000192142305500</code></li>
-          <li>SWIFT: <code>ARABJOAXXXX</code></li>
-          <li>Name: Al-Najehoun International Cultural Center</li>
-          <li>Address: Jordan – Amman – University St., Building 5 – First Floor</li>
-        </ul>
-      </li>
-    </ul>
-        </ul>
-      </li>
-      <li>
-        <strong>Zain Cash</strong>
-        <ul>
-          <li>Number: <code>0799672440</code></li>
-        </ul>
-      </li>
-<p style="color: red; font-weight: bold; font-size: 1.1rem; margin-top: 30px;">
-  <i class="bi bi-arrow-down-circle-fill" style="margin-right: 8px;"></i>
-  Please make sure to take a screenshot of your payment and fill out the enrollment form below. Don't forget to upload the proof of payment.
-</p>
-  </section>
-
-<section id="visa-mastercard" class="payment-details">
-  <h2>Payment Methods – International (Also Available Locally)</h2>
-
-  <p>Please enter your card details below to complete your payment securely.</p>
-
-  <form id="card-payment-form" class="mt-4">
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="cardName" class="form-label">Name on Card *</label>
-        <input type="text" id="cardName" name="cardName" class="form-control" required>
-      </div>
-      <div class="col-md-6">
-        <label for="cardNumber" class="form-label">Card Number *</label>
-        <input type="text" id="cardNumber" name="cardNumber" class="form-control" maxlength="19" placeholder="•••• •••• •••• ••••" required>
-      </div>
-    </div>
-
-    <div class="row mb-3">
-      <div class="col-md-4">
-        <label for="expiryDate" class="form-label">Expiry Date *</label>
-        <input type="text" id="expiryDate" name="expiryDate" class="form-control" placeholder="MM/YY" required>
-      </div>
-      <div class="col-md-4">
-        <label for="cvv" class="form-label">CVV *</label>
-        <input type="text" id="cvv" name="cvv" class="form-control" maxlength="4" placeholder="123" required>
-      </div>
-      <div class="col-md-4 d-flex align-items-end">
-        <button type="submit" class="btn btn-primary w-100">
-          <i class="bi bi-lock-fill me-2"></i> Pay Now
-        </button>
-      </div>
-    </div>
-  </form>
-
-  <p style="color: red; font-weight: bold; font-size: 1.1rem; margin-top: 30px;">
-    <i class="bi bi-arrow-down-circle-fill" style="margin-right: 8px;"></i>
-    Please take a screenshot of your payment confirmation and fill out the enrollment form below. Don’t forget to upload the proof of payment.
-  </p>
-</section>
-
-
-  <section id="western-union" class="payment-details">
-    <h2>Western Union</h2>
-    <ul>
-      <li>Name in Arabic: فادي علي حسين الحساسنة</li>
-      <li>Name in English: FADI ALI HUSSEIN AL-HASSASNEH</li>
-<p style="color: red; font-weight: bold; font-size: 1.1rem; margin-top: 30px;">
-  <i class="bi bi-arrow-down-circle-fill" style="margin-right: 8px;"></i>
-  Please make sure to take a screenshot of your payment and fill out the enrollment form below. Don't forget to upload the proof of payment.
-</p>
-  </section>
-<section>
-
-  <div class="row">
-    <div class="col-lg-8 mx-auto">
-      <div class="enrollment-form-wrapper">
-
-        <div class="enrollment-header text-center mb-5" data-aos="fade-up" data-aos-delay="200">
-          <h2>Enroll in Your Desired Diploma</h2>
-          <p>Fill in the form below to confirm your enrollment and submit the required information.</p>
+        <!-- سويتش اللغة -->
+        <div class="language-switcher d-flex align-items-center">
+          <input type="checkbox" id="lang-toggle" />
+          <label for="lang-toggle" class="lang-label">
+            <span class="lang-text en">EN</span>
+            <span class="lang-text ar">AR</span>
+            <span class="lang-ball"></span>
+          </label>
         </div>
 
-        <form class="enrollment-form" data-aos="fade-up" data-aos-delay="300">
+        <!-- زر الهامبرغر -->
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </div>
+    </header>
 
-          <!-- Full Name in Arabic -->
-          <div class="row mb-4">
-            <div class="col-12">
-              <div class="form-group">
-                <label for="fullNameArabic" class="form-label">Full Name in Arabic *</label>
-                <input type="text" id="fullNameArabic" name="fullNameArabic" class="form-control" required="">
-              </div>
-            </div>
-          </div>
+    <main class="main">
+      <!-- Page Title -->
+      <div class="page-title light-background">
+        <div
+          class="container d-lg-flex justify-content-between align-items-center"
+        >
+          <h1 class="mb-2 mb-lg-0">Enrollment</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li class="current">Enroll</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!-- End Page Title -->
 
-          <!-- Full Name in English -->
-          <div class="row mb-4">
-            <div class="col-12">
-              <div class="form-group">
-                <label for="fullNameEnglish" class="form-label">Full Name in English *</label>
-                <input type="text" id="fullNameEnglish" name="fullNameEnglish" class="form-control" required="">
-              </div>
-            </div>
-          </div>
-
-          <!-- Phone Number with Country Code -->
-          <div class="row mb-4">
-            <div class="col-12">
-              <div class="form-group">
-                <label for="phone" class="form-label">Phone Number *</label>
-                <input type="tel" id="phone" name="phone" class="form-control" required="">
-              </div>
-            </div>
-          </div>
-
-          <!-- Email Address -->
-          <div class="row mb-4">
-            <div class="col-12">
-              <div class="form-group">
-                <label for="email" class="form-label">Email Address *</label>
-                <input type="email" id="email" name="email" class="form-control" required="">
-              </div>
-            </div>
-          </div>
-
-          <!-- Payment Method -->
-          <div class="row mb-4">
-            <div class="col-12">
-              <div class="form-group">
-                <label for="paymentMethod" class="form-label">Payment Method *</label>
-                <select id="paymentMethod" name="paymentMethod" class="form-select" required="">
-                  <option value="">Select a payment method...</option>
-                  <option value="zaincash">Zain Cash</option>
-                  <option value="cliq">CliQ</option>
-                  <option value="western-union">Western Union</option>
-                  <option value="visa-mastercard">Visa / MasterCard</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <!-- Upload Transfer Image -->
-          <div class="row mb-4">
-            <div class="col-12">
-              <div class="form-group">
-                <label for="transferImage" class="form-label">Upload Transfer Receipt *</label>
-                <input type="file" id="transferImage" name="transferImage" class="form-control" accept="image/*" required="">
-              </div>
-            </div>
-          </div>
-
-          <!-- Course Selection -->
-          <div class="row mb-4">
-            <div class="col-12">
-              <div class="form-group">
-                <label for="course" class="form-label">Select Diploma *</label>
-                <select id="course" name="course" class="form-select" required="">
-                  <option value="">Choose a diploma...</option>
-                  <option value="english">Diploma in English Language</option>
-                  <option value="turkish">Diploma in Turkish Language</option>
-                  <option value="spanish">Diploma in Spanish Language</option>
-                  <option value="german">Diploma in German Language</option>
-                  <option value="french">Diploma in French Language</option>
-                  <option value="dental">Dental Technician Diploma</option>
-                  <option value="hospital-management">Hospital Management Diploma</option>
-                  <option value="hybrid-car">Hybrid Car Maintenance Diploma</option>
-                  <option value="nursing">Nursing Diploma</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <!-- Country -->
-          <div class="row mb-4">
-            <div class="col-12">
-              <div class="form-group">
-                <label for="country" class="form-label">Country *</label>
-                <select id="country" name="country" class="form-select" required="">
-                  <option value="">Select your country...</option>
-                  <!-- You can insert full list later if needed -->
-                  <option value="jordan">Jordan</option>
-                  <option value="saudi-arabia">Saudi Arabia</option>
-                  <option value="iraq">Iraq</option>
-                  <option value="egypt">Egypt</option>
-                  <option value="uae">UAE</option>
-                  <option value="turkey">Turkey</option>
-                  <option value="usa">USA</option>
-                  <option value="canada">Canada</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <!-- Preferred Schedule -->
-          <div class="row mb-4">
-            <div class="col-12">
-              <div class="form-group">
-                <label for="schedule" class="form-label">Preferred Schedule *</label>
-                <textarea id="schedule" name="schedule" class="form-control" rows="3" placeholder="e.g., Monday & Wednesday mornings, Sunday evenings..." required=""></textarea>
-              </div>
-            </div>
-          </div>
-
-          <!-- Terms and Agreement -->
-          <div class="row mb-4">
-            <div class="col-12">
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="terms" name="terms" required="">
-                  <label class="form-check-label" for="terms">
-                    I hereby acknowledge and accept all <a href="#" target="_blank">terms and conditions</a> of the academy. *
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Submit Button -->
-          <div class="row">
-            <div class="col-12 text-center">
-              <button type="submit" class="btn btn-enroll">
-                <i class="bi bi-check-circle me-2"></i>
-                Enroll Now
-              </button>
-              <p class="enrollment-note mt-3">
-                <i class="bi bi-shield-check"></i>
-                Your information is secure and will never be shared with third parties.
+      <!-- Enroll Section -->
+      <section id="enroll" class="enroll section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <section class="payment-methods-section">
+            <div class="text-center mb-4">
+              <h3>Choose Your Preferred Payment Method</h3>
+              <p>
+                Please select one of the available payment options below to
+                proceed with your enrollment.
               </p>
             </div>
-          </div>
-
-        </form>
-
-
+            <div class="payment-buttons">
+              <button class="payment-btn" data-target="direct-payment">
+                Direct Payment
+                <div class="payment-logos">
+                  <img
+                    src="https://res.cloudinary.com/dcbxuax2c/image/upload/v1755048717/final_cliq_logo-02_1_0_hxdlda.png"
+                    alt="Cliq Logo"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/dcbxuax2c/image/upload/v1755047158/zain-cash-logo-png_seeklogo-519935_spuvla.png"
+                    alt="Zain Cash Logo"
+                  />
+                </div>
+              </button>
+              <button class="payment-btn" data-target="western-union">
+                Western Union
+                <img
+                  src="https://res.cloudinary.com/dcbxuax2c/image/upload/v1755046752/217427_iegk5j.png"
+                  alt="Western Union Logo"
+                />
+              </button>
+              <button class="payment-btn" data-target="visa-mastercard">
+                Visa / MasterCard
+                <div class="payment-logos">
+                  <img
+                    src="https://res.cloudinary.com/dcbxuax2c/image/upload/v1755048798/mastercard-visa-cards-logos-icons-701751695036083sdqsk5ncvn_vftzaq.png"
+                    alt="Visa Logo"
+                  />
+                </div>
+              </button>
             </div>
-          </div><!-- End Form Column -->
+          </section>
+          <!-- Payment details section as you gave, with added IDs for scroll targets -->
 
-          <div class="col-lg-4 d-none d-lg-block">
-            <div class="enrollment-benefits" data-aos="fade-left" data-aos-delay="400">
-              <h3>Why Choose Our Courses?</h3>
-              <div class="benefit-item">
-                <div class="benefit-icon">
-                  <i class="bi bi-trophy"></i>
-                </div>
-                <div class="benefit-content">
-                  <h4>Expert Instructors</h4>
-                  <p>Learn from industry professionals with years of real-world experience</p>
-                </div>
-              </div><!-- End Benefit Item -->
-<div class="benefit-item">
-  <div class="benefit-icon">
-    <i class="bi bi-laptop"></i>
-  </div>
-  <div class="benefit-content">
-    <h4>Online vs On-Campus Learning</h4>
-    <p>Choose between flexible online classes or immersive on-campus experiences based on your lifestyle and goals.</p>
-  </div>
-</div>
+          <section id="direct-payment" class="payment-details">
+            <h2>Payment Methods – Jordan</h2>
 
-              <div class="benefit-item">
-                <div class="benefit-icon">
-                  <i class="bi bi-clock"></i>
-                </div>
-                <div class="benefit-content">
-                  <h4>Flexible Learning</h4>
-                  <p>Study at your own pace with 24/7 access to course materials</p>
-                </div>
-              </div><!-- End Benefit Item -->
+            <ul>
+              <li>
+                <strong>Electronic Transfer</strong>
+                <ul>
+                  <li>Cliq – Bank Al Etihad: <code>CENTER25</code></li>
+                  <li>Cliq – Arab Bank: <code>CENTER18</code></li>
+                  <li>
+                    Account Name: Al-Najehoun International Cultural Center
+                  </li>
+                </ul>
+              </li>
 
-              <div class="benefit-item">
-                <div class="benefit-icon">
-                  <i class="bi bi-award"></i>
-                </div>
-                <div class="benefit-content">
-                  <h4>Certification</h4>
-                  <p>Earn industry-recognized certificates upon course completion</p>
-                </div>
-              </div><!-- End Benefit Item -->
+              <li>
+                <strong>Visit Our Location</strong>
+                <ul>
+                  <li>University Street, Near Arab Bank (University Mosque)</li>
+                  <li>Building No. 5, Above Ghazal Shops, 2nd Floor</li>
+                  <li>
+                    <a
+                      href="https://maps.app.goo.gl/aWHcSdaF5jiJpngg7"
+                      target="_blank"
+                      >View Location</a
+                    >
+                  </li>
+                </ul>
+              </li>
 
+              <li>
+                <strong>Bank Transfer – Bank Al Etihad</strong>
+                <ul>
+                  <li>Account Number: <code>0160182706415101</code></li>
+                  <li>IBAN: <code>JO66UBSI1090000160182706415101</code></li>
+                  <li>SWIFT: <code>UBSIJOAXXXX</code></li>
+                  <li>Name: Al-Najehoun International Cultural Center</li>
+                  <li>
+                    Address: Jordan – Amman – University St., Building 5 – First
+                    Floor
+                  </li>
+                </ul>
+              </li>
+            </ul>
 
-              </div><!-- End Benefit Item -->
+            <hr />
+
+            <h2>Payment Methods – Palestine</h2>
+
+            <ul>
+              <li>
+                <strong>Bank of Palestine / PalPay (West Bank)</strong>
+                <ul>
+                  <li>Account Number: <code>479060</code></li>
+                  <li>Phone: <code>0599411700</code></li>
+                  <li>Name: Muhammad Ameen Saeed Ozrail</li>
+                  <li>IBAN: <code>PS23PALS046904790600993000000</code></li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Arab Bank</strong>
+                <ul>
+                  <li>Account Number: <code>9280692770570</code></li>
+                  <li>Name: Ahmad Abdullah Zbaideyah</li>
+                  <li>IBAN: <code>PS87ARAB000000009280692770570</code></li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Reflect App</strong>
+                <ul>
+                  <li>Name: Ahmad Abdullah Zbaideyah</li>
+                  <li>IBAN: <code>PS66ARAB900030022524500958500</code></li>
+                  <li>Phone: <code>0595052740</code></li>
+                </ul>
+              </li>
+            </ul>
+
+            <hr />
+
+            <h2>Payment Methods – West Bank</h2>
+
+            <ul>
+              <li>
+                <strong>Arab Bank</strong>
+                <ul>
+                  <li>Account Number: <code>9280692770570</code></li>
+                  <li>IBAN: <code>PS87ARAB000000009280692770570</code></li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Bank of Palestine / PalPay</strong>
+                <ul>
+                  <li>Account Number: <code>479060</code></li>
+                  <li>Phone: <code>0599411700</code></li>
+                  <li>IBAN: <code>PS23PALS046904790600993000000</code></li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Reflect</strong>
+                <ul>
+                  <li>IBAN: <code>PS66ARAB900030022524500958500</code></li>
+                  <li>Phone: <code>0595052740</code></li>
+                </ul>
+              </li>
+            </ul>
+
+            <hr />
+
+            <h2>Payment Methods – Gaza</h2>
+
+            <ul>
+              <li>
+                Account Number: <code>1536080</code><br />
+                Phone: <code>0594435646</code><br />
+                Name: Mahmoud Adel Muslim
+              </li>
+            </ul>
+
+            <p
+              style="
+                color: red;
+                font-weight: bold;
+                font-size: 1.1rem;
+                margin-top: 30px;
+              "
+            >
+              Please make sure to take a screenshot of your payment and upload
+              the proof in the form below.
+            </p>
+          </section>
+
+          <section id="visa-mastercard" class="payment-details">
+            <h2>Online Payment</h2>
+
+            <p>
+              You can pay بسهولة using Visa, MasterCard, or Apple Pay via the
+              link below:
+            </p>
+
+            <a
+              href="https://secure-jordan.paytabs.com/payment/link/133307/6568223"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              Go to Payment
+            </a>
+
+            <p
+              style="
+                color: red;
+                font-weight: bold;
+                font-size: 1.1rem;
+                margin-top: 30px;
+              "
+            >
+              Please take a screenshot of your payment confirmation and upload
+              it in the form.
+            </p>
+          </section>
+
+          <section id="western-union" class="payment-details">
+            <h2>Western Union</h2>
+            <ul>
+              <li>Name (Arabic): حسام زياد أحمد العبسي</li>
+              <li>Name (English): HUSSAM ZEYAD AHMED ALA'BSI</li>
+            </ul>
+
+            <p
+              style="
+                color: red;
+                font-weight: bold;
+                font-size: 1.1rem;
+                margin-top: 30px;
+              "
+            >
+              Please make sure to take a screenshot of your payment and upload
+              the proof in the form below.
+            </p>
+          </section>
+
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="enrollment-form-wrapper">
+                <div
+                  class="enrollment-header text-center mb-5"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <h2>Enroll in Your Desired Diploma</h2>
+                  <p>
+                    Fill in the form below to confirm your enrollment and submit
+                    the required information.
+                  </p>
+                </div>
+
+                <form
+                  class="enrollment-form"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <!-- Full Name in Arabic -->
+                  <div class="row mb-4">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="fullNameArabic" class="form-label"
+                          >Full Name in Arabic *</label
+                        >
+                        <input
+                          type="text"
+                          id="fullNameArabic"
+                          name="fullNameArabic"
+                          class="form-control"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Full Name in English -->
+                  <div class="row mb-4">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="fullNameEnglish" class="form-label"
+                          >Full Name in English *</label
+                        >
+                        <input
+                          type="text"
+                          id="fullNameEnglish"
+                          name="fullNameEnglish"
+                          class="form-control"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Phone Number with Country Code -->
+                  <div class="row mb-4">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="phone" class="form-label"
+                          >Phone Number *</label
+                        >
+                        <input
+                          type="tel"
+                          id="phone"
+                          name="phone"
+                          class="form-control"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Email Address -->
+                  <div class="row mb-4">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="email" class="form-label"
+                          >Email Address *</label
+                        >
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          class="form-control"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Payment Method -->
+                  <div class="row mb-4">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="paymentMethod" class="form-label"
+                          >Payment Method *</label
+                        >
+                        <select
+                          id="paymentMethod"
+                          name="paymentMethod"
+                          class="form-select"
+                          required=""
+                        >
+                          <option value="">Select a payment method...</option>
+                          <option value="zaincash">Zain Cash</option>
+                          <option value="cliq">CliQ</option>
+                          <option value="western-union">Western Union</option>
+                          <option value="visa-mastercard">
+                            Visa / MasterCard
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Upload Transfer Image -->
+                  <div class="row mb-4">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="transferImage" class="form-label"
+                          >Upload Transfer Receipt *</label
+                        >
+                        <input
+                          type="file"
+                          id="transferImage"
+                          name="transferImage"
+                          class="form-control"
+                          accept="image/*"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Course Selection -->
+                  <div class="row mb-4">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="course" class="form-label"
+                          >Select Diploma *</label
+                        >
+                        <select
+                          id="course"
+                          name="course"
+                          class="form-select"
+                          required=""
+                        >
+                          <option value="">Choose a diploma...</option>
+                          <option value="english">
+                            Diploma in English Language
+                          </option>
+                          <option value="turkish">
+                            Diploma in Turkish Language
+                          </option>
+                          <option value="spanish">
+                            Diploma in Spanish Language
+                          </option>
+                          <option value="german">
+                            Diploma in German Language
+                          </option>
+                          <option value="french">
+                            Diploma in French Language
+                          </option>
+                          <option value="dental">
+                            Dental Technician Diploma
+                          </option>
+                          <option value="hospital-management">
+                            Hospital Management Diploma
+                          </option>
+                          <option value="hybrid-car">
+                            Hybrid Car Maintenance Diploma
+                          </option>
+                          <option value="nursing">Nursing Diploma</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Country -->
+                  <div class="row mb-4">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="country" class="form-label"
+                          >Country *</label
+                        >
+                        <select
+                          id="country"
+                          name="country"
+                          class="form-select"
+                          required=""
+                        >
+                          <option value="">Select your country...</option>
+                          <!-- You can insert full list later if needed -->
+                          <option value="jordan">Jordan</option>
+                          <option value="saudi-arabia">Saudi Arabia</option>
+                          <option value="iraq">Iraq</option>
+                          <option value="egypt">Egypt</option>
+                          <option value="uae">UAE</option>
+                          <option value="turkey">Turkey</option>
+                          <option value="usa">USA</option>
+                          <option value="canada">Canada</option>
+                          <option value="other">Other</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Preferred Schedule -->
+                  <div class="row mb-4">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="schedule" class="form-label"
+                          >Preferred Schedule *</label
+                        >
+                        <textarea
+                          id="schedule"
+                          name="schedule"
+                          class="form-control"
+                          rows="3"
+                          placeholder="e.g., Monday & Wednesday mornings, Sunday evenings..."
+                          required=""
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Terms and Agreement -->
+                  <div class="row mb-4">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="terms"
+                            name="terms"
+                            required=""
+                          />
+                          <label class="form-check-label" for="terms">
+                            I hereby acknowledge and accept all
+                            <a href="#" target="_blank">terms and conditions</a>
+                            of the academy. *
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="row">
+                    <div class="col-12 text-center">
+                      <button type="submit" class="btn btn-enroll">
+                        <i class="bi bi-check-circle me-2"></i>
+                        Enroll Now
+                      </button>
+                      <p class="enrollment-note mt-3">
+                        <i class="bi bi-shield-check"></i>
+                        Your information is secure and will never be shared with
+                        third parties.
+                      </p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- End Form Column -->
+
+            <div class="col-lg-4 d-none d-lg-block">
+              <div
+                class="enrollment-benefits"
+                data-aos="fade-left"
+                data-aos-delay="400"
+              >
+                <h3>Why Choose Our Courses?</h3>
+                <div class="benefit-item">
+                  <div class="benefit-icon">
+                    <i class="bi bi-trophy"></i>
+                  </div>
+                  <div class="benefit-content">
+                    <h4>Expert Instructors</h4>
+                    <p>
+                      Learn from industry professionals with years of real-world
+                      experience
+                    </p>
+                  </div>
+                </div>
+                <!-- End Benefit Item -->
+                <div class="benefit-item">
+                  <div class="benefit-icon">
+                    <i class="bi bi-laptop"></i>
+                  </div>
+                  <div class="benefit-content">
+                    <h4>Online vs On-Campus Learning</h4>
+                    <p>
+                      Choose between flexible online classes or immersive
+                      on-campus experiences based on your lifestyle and goals.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="benefit-item">
+                  <div class="benefit-icon">
+                    <i class="bi bi-clock"></i>
+                  </div>
+                  <div class="benefit-content">
+                    <h4>Flexible Learning</h4>
+                    <p>
+                      Study at your own pace with 24/7 access to course
+                      materials
+                    </p>
+                  </div>
+                </div>
+                <!-- End Benefit Item -->
+
+                <div class="benefit-item">
+                  <div class="benefit-icon">
+                    <i class="bi bi-award"></i>
+                  </div>
+                  <div class="benefit-content">
+                    <h4>Certification</h4>
+                    <p>
+                      Earn industry-recognized certificates upon course
+                      completion
+                    </p>
+                  </div>
+                </div>
+                <!-- End Benefit Item -->
+              </div>
+              <!-- End Benefit Item -->
 
               <div class="enrollment-stats mt-4">
                 <div class="stat-item">
@@ -457,143 +713,365 @@
                   <span class="stat-number">4.9/5</span>
                   <span class="stat-label">Average Rating</span>
                 </div>
-              </div><!-- End Stats -->
-
+              </div>
+              <!-- End Stats -->
             </div>
-          </div><!-- End Benefits Column -->
-
+          </div>
+          <!-- End Benefits Column -->
         </div>
+      </section>
+      <!-- /Enroll Section -->
+    </main>
 
+    <footer
+      id="footer"
+      class="footer accent-background"
+      style="
+        direction: ltr;
+        background: #fff7f0;
+        padding: 40px 0;
+        border-top: 3px solid #ff8c42;
+        box-shadow: 0 -4px 10px rgba(255, 140, 66, 0.15);
+      "
+    >
+      <div class="container footer-top" style="padding-bottom: 30px">
+        <div class="row gy-4" style="gap: 30px">
+          <!-- Added gap for more space between columns -->
+
+          <!-- About the center -->
+          <div
+            class="col-lg-3 col-md-6 footer-about"
+            style="text-align: left; padding-left: 20px"
+          >
+            <a
+              href="index.html"
+              class="logo d-flex align-items-center"
+              style="text-decoration: none"
+            >
+              <span
+                class="sitename"
+                style="font-size: 1.4rem; font-weight: 700; color: #ff7a22"
+                >Success Center</span
+              >
+            </a>
+            <p style="margin-top: 10px; color: #444">
+              Success Center is your partner in growth, dedicated to helping you
+              achieve your academic and professional goals through specialized
+              support programs and services.
+            </p>
+
+            <div class="social-links d-flex mt-4" style="gap: 12px">
+              <a
+                href="https://web.facebook.com/SuccessCenter.Jo/?_rdc=1&_rdr"
+                style="color: #ff7a22; font-size: 1.2rem"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/successcenter.jo/?hl=en"
+                style="color: #ff7a22; font-size: 1.2rem"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="https://jo.linkedin.com/company/success-center-jo?trk=public_jobs_topcard_logo"
+                style="color: #ff7a22; font-size: 1.2rem"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div
+            class="col-lg-2 col-md-6 footer-links"
+            style="text-align: left; padding-left: 20px"
+          >
+            <h4 style="color: #ff7a22">Quick Links</h4>
+            <ul style="list-style: none; padding: 0">
+              <li>
+                <a href="index.html" style="color: #444; text-decoration: none"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="about.html" style="color: #444; text-decoration: none"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="courses.html"
+                  style="color: #444; text-decoration: none"
+                  >Courses</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  style="color: #444; text-decoration: none"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="certifications.html"
+                  style="color: #444; text-decoration: none"
+                  >Certifications</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Our Courses -->
+          <div
+            class="col-lg-2 col-md-6 footer-links"
+            style="text-align: left; padding-left: 20px"
+          >
+            <h4 style="color: #ff7a22">Our Courses</h4>
+            <ul style="list-style: none; padding: 0">
+              <li>
+                <a
+                  href="EnglishLanguage.html"
+                  style="color: #444; text-decoration: none"
+                  >English Language</a
+                >
+              </li>
+              <li>
+                <a
+                  href="GermanLanguage.html"
+                  style="color: #444; text-decoration: none"
+                  >German Language</a
+                >
+              </li>
+              <li>
+                <a
+                  href="SpanishLanguage.html"
+                  style="color: #444; text-decoration: none"
+                  >Spanish Language</a
+                >
+              </li>
+              <li>
+                <a
+                  href="Cybersecurity.html"
+                  style="color: #444; text-decoration: none"
+                  >Cybersecurity</a
+                >
+              </li>
+              <li>
+                <a
+                  href="AirportManagement.html"
+                  style="color: #444; text-decoration: none"
+                  >Airport Management</a
+                >
+              </li>
+              <li>
+                <a
+                  href="HospitalManagement.html"
+                  style="color: #444; text-decoration: none"
+                  >Hospital Management</a
+                >
+              </li>
+              <li>
+                <a
+                  href="HybridMaintenance.html"
+                  style="color: #444; text-decoration: none"
+                  >Hybrid Maintenance</a
+                >
+              </li>
+              <li>
+                <a
+                  href="Nursing.html"
+                  style="color: #444; text-decoration: none"
+                  >Nursing</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Us -->
+          <div
+            class="col-lg-3 col-md-6 footer-contact text-center text-md-start"
+            style="
+              text-align: left !important;
+              direction: ltr;
+              padding-left: 20px;
+            "
+          >
+            <h4 style="color: #ff7a22">Contact Us</h4>
+
+            <!-- Set the color of all text to gray -->
+            <p style="color: #777 !important">Amman - Jordan</p>
+            <p style="color: #777 !important">University Street Branch</p>
+            <p>
+              <strong style="color: #777 !important">Email:</strong>
+              <span style="color: #777 !important"
+                >info@successcenter1.com</span
+              >
+            </p>
+            <p>
+              <strong style="color: #777 !important">Phone:</strong>
+              <span style="color: #777 !important">062003038</span>
+            </p>
+            <p>
+              <strong style="color: #777 !important">Follow-up:</strong>
+              <span style="color: #777 !important">062005040</span>
+            </p>
+            <p>
+              <strong style="color: #777 !important">Working Hours:</strong>
+              <span style="color: #777 !important"
+                >Every day from 8AM to 10PM</span
+              >
+            </p>
+          </div>
+        </div>
       </div>
 
-    </section><!-- /Enroll Section -->
-
-  </main>
-
-<footer id="footer" class="footer accent-background" style="
-  direction: ltr;
-  background: #fff7f0;
-  padding: 40px 0;
-  border-top: 3px solid #ff8c42;
-  box-shadow: 0 -4px 10px rgba(255, 140, 66, 0.15);
-">
-
-  <div class="container footer-top" style="padding-bottom: 30px;">
-    <div class="row gy-4" style="gap: 30px;"> <!-- Added gap for more space between columns -->
-
-      <!-- About the center -->
-      <div class="col-lg-3 col-md-6 footer-about" style="text-align: left; padding-left: 20px;">
-        <a href="index.html" class="logo d-flex align-items-center" style="text-decoration: none;">
-          <span class="sitename" style="font-size: 1.4rem; font-weight: 700; color: #ff7a22;">Success Center</span>
-        </a>
-        <p style="margin-top: 10px; color: #444;">
-          Success Center is your partner in growth, dedicated to helping you achieve your academic and professional goals through specialized support programs and services.
+      <!-- Change text color to black in the final paragraph -->
+      <div
+        class="container copyright text-center mt-4"
+        style="padding-top: 10px; border-top: 1px solid #ffd2b2"
+      >
+        <p style="color: #000 !important">
+          © <strong class="sitename">Success Center</strong> All rights reserved
         </p>
-
-        <div class="social-links d-flex mt-4" style="gap: 12px;">
-          <a href="https://web.facebook.com/SuccessCenter.Jo/?_rdc=1&_rdr" style="color: #ff7a22; font-size: 1.2rem;"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/successcenter.jo/?hl=en" style="color: #ff7a22; font-size: 1.2rem;"><i class="bi bi-instagram"></i></a>
-          <a href="https://jo.linkedin.com/company/success-center-jo?trk=public_jobs_topcard_logo" style="color: #ff7a22; font-size: 1.2rem;"><i class="bi bi-linkedin"></i></a>
-        </div>
       </div>
-
-      <!-- Quick Links -->
-      <div class="col-lg-2 col-md-6 footer-links" style="text-align: left; padding-left: 20px;">
-        <h4 style="color: #ff7a22;">Quick Links</h4>
-        <ul style="list-style: none; padding: 0;">
-          <li><a href="index.html" style="color: #444; text-decoration: none;">Home</a></li>
-          <li><a href="about.html" style="color: #444; text-decoration: none;">About Us</a></li>
-          <li><a href="courses.html" style="color: #444; text-decoration: none;">Courses</a></li>
-          <li><a href="contact.html" style="color: #444; text-decoration: none;">Contact Us</a></li>
-          <li><a href="certifications.html" style="color: #444; text-decoration: none;">Certifications</a></li>
-        </ul>
+      <!-- Added Developer and Supporter Info -->
+      <div class="container developer-info text-center mt-4">
+        <p style="color: #444">
+          <strong>Developed by CTO of Success Center</strong> –
+          <strong style="color: #703005">Abdulhadi Abu Ashebah</strong>
+        </p>
+        <p style="color: #444">
+          <strong>Supported by</strong>
+          <a
+            href="https://www.instagram.com/eqtech_jo/"
+            target="_blank"
+            style="color: #444; text-decoration: none; font-weight: bold"
+            >EQTech Jordan</a
+          >
+        </p>
       </div>
+    </footer>
 
-      <!-- Our Courses -->
-      <div class="col-lg-2 col-md-6 footer-links" style="text-align: left; padding-left: 20px;">
-        <h4 style="color: #ff7a22;">Our Courses</h4>
-        <ul style="list-style: none; padding: 0;">
-          <li><a href="EnglishLanguage.html" style="color: #444; text-decoration: none;">English Language</a></li>
-          <li><a href="GermanLanguage.html" style="color: #444; text-decoration: none;">German Language</a></li>
-          <li><a href="SpanishLanguage.html" style="color: #444; text-decoration: none;">Spanish Language</a></li>
-          <li><a href="Cybersecurity.html" style="color: #444; text-decoration: none;">Cybersecurity</a></li>
-          <li><a href="AirportManagement.html" style="color: #444; text-decoration: none;">Airport Management</a></li>
-          <li><a href="HospitalManagement.html" style="color: #444; text-decoration: none;">Hospital Management</a></li>
-          <li><a href="HybridMaintenance.html" style="color: #444; text-decoration: none;">Hybrid Maintenance</a></li>
-          <li><a href="Nursing.html" style="color: #444; text-decoration: none;">Nursing</a></li>
-        </ul>
-      </div>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-      <!-- Contact Us -->
-      <div class="col-lg-3 col-md-6 footer-contact text-center text-md-start" 
-        style="text-align: left !important; direction: ltr; padding-left: 20px;">
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-        <h4 style="color: #ff7a22;">Contact Us</h4>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-        <!-- Set the color of all text to gray -->
-        <p style="color: #777 !important;">Amman - Jordan</p>
-        <p style="color: #777 !important;">University Street Branch</p>
-        <p><strong style="color: #777 !important;">Email:</strong> <span style="color: #777 !important;">info@successcenter1.com</span></p>
-        <p><strong style="color: #777 !important;">Phone:</strong> <span style="color: #777 !important;">062003038</span></p>
-        <p><strong style="color: #777 !important;">Follow-up:</strong> <span style="color: #777 !important;">062005040</span></p>
-<p><strong style="color: #777 !important;">Working Hours:</strong> <span style="color: #777 !important;">Every day from 8AM to 10PM</span></p>
-      </div>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+  <script>
+    document.querySelectorAll(".payment-btn").forEach((button) => {
+      button.addEventListener("click", () => {
+        const targetId = button.getAttribute("data-target");
+        const targetSection = document.getElementById(targetId);
 
-    </div>
-  </div>
+        if (!targetSection) return;
 
-  <!-- Change text color to black in the final paragraph -->
-  <div class="container copyright text-center mt-4" 
-    style="padding-top: 10px; border-top: 1px solid #ffd2b2;">
-    <p style="color: #000 !important;">© <strong class="sitename">Success Center</strong> All rights reserved</p>
-  </div>
-<!-- Added Developer and Supporter Info -->
-<div class="container developer-info text-center mt-4">
-  <p style="color: #444;"><strong>Developed by CTO of Success Center</strong> – <strong style="color: #703005;">Abdulhadi Abu Ashebah</strong></p>
-  <p style="color: #444;"><strong>Supported by</strong> <a href="https://www.instagram.com/eqtech_jo/" target="_blank" style="color: #444; text-decoration: none; font-weight: bold;">EQTech Jordan</a></p>
-</div>
+        // Remove active class from all payment-details
+        document.querySelectorAll(".payment-details").forEach((section) => {
+          section.classList.remove("active");
+        });
 
-  
-</footer>
+        // Add active class to target section
+        targetSection.classList.add("active");
 
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-<script>
-  document.querySelectorAll('.payment-btn').forEach(button => {
-    button.addEventListener('click', () => {
-      const targetId = button.getAttribute('data-target');
-      const targetSection = document.getElementById(targetId);
-
-      if (!targetSection) return;
-
-      // Remove active class from all payment-details
-      document.querySelectorAll('.payment-details').forEach(section => {
-        section.classList.remove('active');
+        // Scroll smoothly to the target section
+        targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
       });
-
-      // Add active class to target section
-      targetSection.classList.add('active');
-
-      // Scroll smoothly to the target section
-      targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
-  });
-</script>
+  </script>
+  <script type="module">
+    // Firebase SDK
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import {
+      getFirestore,
+      collection,
+      addDoc,
+    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+    import {
+      getStorage,
+      ref,
+      uploadBytes,
+      getDownloadURL,
+    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-storage.js";
 
+    // Config
+    const firebaseConfig = {
+      apiKey: "AIzaSyBgj3M3tJTA0oQMGTyjmPWjljx7tJm8G6Y",
+      authDomain: "sc-galery.firebaseapp.com",
+      projectId: "sc-galery",
+      storageBucket: "sc-galery.appspot.com",
+      messagingSenderId: "274533300792",
+      appId: "1:274533300792:web:013a55d255d6059da884cd",
+    };
+
+    // Init
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const storage = getStorage(app);
+
+    // FORM FUNCTION 🔥
+    document
+      .querySelector(".enrollment-form")
+      .addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const btn = e.target.querySelector("button[type='submit']");
+        btn.disabled = true;
+        btn.innerText = "Processing...";
+
+        try {
+          const form = e.target;
+
+          // file
+          const file = document.getElementById("transferImage").files[0];
+          let imageUrl = "";
+
+          if (file) {
+            const fileRef = ref(
+              storage,
+              "receipts/" + Date.now() + "_" + file.name,
+            );
+            await uploadBytes(fileRef, file);
+            imageUrl = await getDownloadURL(fileRef);
+          }
+
+          // save to firestore
+          await addDoc(collection(db, "enrollments"), {
+            fullNameArabic: form.fullNameArabic.value,
+            fullNameEnglish: form.fullNameEnglish.value,
+            phone: form.phone.value,
+            email: form.email.value,
+            paymentMethod: form.paymentMethod.value,
+            course: form.course.value,
+            country: form.country.value,
+            schedule: form.schedule.value,
+            receipt: imageUrl,
+            createdAt: new Date(),
+          });
+
+          alert("Enrollment successful ✅");
+          form.reset();
+        } catch (err) {
+          console.error(err);
+          alert("Error ❌ try again");
+        }
+
+        btn.disabled = false;
+        btn.innerText = "Enroll Now";
+      });
+  </script>
 </html>
