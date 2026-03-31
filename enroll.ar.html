@@ -25,7 +25,9 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-storage.js"></script>
   <!-- =======================================================
   * Template Name: Learner
   * Template URL: https://bootstrapmade.com/learner-bootstrap-course-template/
@@ -65,8 +67,9 @@
 
     <!-- اللوغو (يبقى يسار كما هو) -->
     <a href="index.html" class="logo d-flex align-items-center me-auto">
-      <img src="https://res.cloudinary.com/dcbxuax2c/image/upload/v1752281413/Untitled_design_49_go3izf.png" 
-           alt="شعار الأكاديمية" class="logo-img" style="max-height: 50px;">
+<img src="https://res.cloudinary.com/dcbxuax2c/image/upload/v1752281413/Untitled_design_49_go3izf.png"
+     alt="Academy Logo"
+     class="logo-img">
     </a>
 
     <!-- القائمة (فقط هي يتم قلبها إلى اليمين) -->
@@ -130,6 +133,7 @@
 </div><!-- End Page Title -->
 
 <!-- Enroll Section -->
+<!-- Enroll Section -->
 <section id="enroll" class="enroll section" dir="rtl">
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -163,100 +167,128 @@
 
       <!-- Direct Payment Section -->
       <section id="direct-payment" class="payment-details mt-5">
-        <h2>طرق الدفع المحلية (الأردن)</h2>
+
+        <h2>طرق الدفع في الأردن</h2>
         <ul>
-          <li>مركز الناجحون الدولي الثقافي
+          <li><strong>التحويل الإلكتروني</strong>
             <ul>
-              <li><strong>Cliq</strong></li>
-              <li>اسم البنك: <code>بنك الاتحاد</code></li>
-              <li>الاسم المستعار: <code>Successsc✔️</code></li>
-              <li>اسم الحساب: <code>مركز الناجحون الدولي الثقافي</code></li>
+              <li>كليك بنك الاتحاد: <code>CENTER25</code></li>
+              <li>كليك البنك العربي: <code>CENTER18</code></li>
+              <li>سيظهر باسم: مركز الناجحون الدولي الثقافي</li>
             </ul>
           </li>
-          <li><strong>الحوالة البنكية – بنك الاتحاد</strong>
+
+          <li><strong>زيارة الموقع</strong>
             <ul>
-              <li>رقم الحساب: <code>0160182706415101</code></li>
-              <li>الآيبان: <code>JO66UBSI1090000160182706415101</code></li>
-              <li>سويفت: <code>UBSIJOAXXXX</code></li>
+              <li>بشارع الجامعة الأردنية، إشارة الجامع، بالقرب من البنك العربي (مسجد الجامعة)</li>
+              <li>عمارة رقم 5، فوق محلات غزال، الطابق الثاني</li>
+              <li><a href="https://maps.app.goo.gl/aWHcSdaF5jiJpngg7" target="_blank">رابط الموقع</a></li>
+            </ul>
+          </li>
+
+          <li><strong>بنك الاتحاد</strong>
+            <ul>
+              <li>ACCOUNT NUMBER: <code>0160182706415101</code></li>
+              <li>IBAN: <code>JO66UBSI1090000160182706415101</code></li>
+              <li>SWIFT: <code>UBSIJOAXXXX</code></li>
               <li>الاسم: مركز الناجحون الدولي الثقافي</li>
-              <li>العنوان: الأردن – عمان – شارع الجامعة، مبنى 5 – الطابق الأول</li>
-            </ul>
-          </li>
-          <li><strong>الحوالة البنكية – البنك العربي</strong>
-            <ul>
-              <li>رقم الحساب: <code>0192142305500</code></li>
-              <li>الآيبان: <code>JO45ARAB1920000000192142305500</code></li>
-              <li>سويفت: <code>ARABJOAXXXX</code></li>
-              <li>الاسم: مركز الناجحون الدولي الثقافي</li>
-              <li>العنوان: الأردن – عمان – شارع الجامعة، مبنى 5 – الطابق الأول</li>
-            </ul>
-          </li>
-          <li><strong>زين كاش</strong>
-            <ul>
-              <li>الرقم: <code>0799672440</code></li>
+              <li>ADDRESS: Jordan - Amman - University St. - Building 5 - first floor</li>
             </ul>
           </li>
         </ul>
 
-        <p style="color: red; font-weight: bold; font-size: 1.1rem; margin-top: 20px;">
-          <i class="bi bi-arrow-down-circle-fill" style="margin-right: 8px;"></i>
-          يرجى أخذ لقطة شاشة لعملية الدفع وملء نموذج التسجيل أدناه. لا تنسى رفع إثبات الدفع.
-        </p>
+        <hr>
+
+        <h2>طرق الدفع في فلسطين</h2>
+        <ul>
+          <li><strong>بنك فلسطين / محفظة بال باي (الضفة)</strong>
+            <ul>
+              <li>رقم الحساب: <code>479060</code></li>
+              <li>رقم الهاتف: <code>0599411700</code></li>
+              <li>محمد أمين سعيد عزريل</li>
+              <li>Muhammad Ameen Saeed Ozrail</li>
+              <li>IBAN: <code>PS23PALS046904790600993000000</code></li>
+            </ul>
+          </li>
+
+          <li><strong>البنك العربي</strong>
+            <ul>
+              <li>رقم الحساب: <code>9280692770570</code></li>
+              <li>أحمد عبد الله عبد الكريم زبيديه</li>
+              <li>IBAN: <code>PS87ARAB000000009280692770570</code></li>
+            </ul>
+          </li>
+
+          <li><strong>تطبيق ريفلكت</strong>
+            <ul>
+              <li>الاسم: أحمد عبدالله زبيدية</li>
+              <li>IBAN: <code>PS66ARAB900030022524500958500</code></li>
+              <li>رقم الهاتف: <code>0595052740</code></li>
+            </ul>
+          </li>
+        </ul>
+
+        <hr>
+
+        <h2>طرق دفع الضفة</h2>
+        <ul>
+          <li><strong>البنك العربي</strong>
+            <ul>
+              <li>رقم الحساب: <code>9280692770570</code></li>
+              <li>IBAN: <code>PS87ARAB000000009280692770570</code></li>
+            </ul>
+          </li>
+
+          <li><strong>بنك فلسطين ومحفظة بال باي</strong>
+            <ul>
+              <li>رقم الحساب: <code>479060</code></li>
+              <li>رقم الهاتف: <code>0599411700</code></li>
+              <li>IBAN: <code>PS23PALS046904790600993000000</code></li>
+            </ul>
+          </li>
+
+          <li><strong>ريفلكت</strong>
+            <ul>
+              <li>IBAN: <code>PS66ARAB900030022524500958500</code></li>
+              <li>رقم الهاتف: <code>0595052740</code></li>
+            </ul>
+          </li>
+        </ul>
+
+        <hr>
+
+        <h2>طرق دفع طلاب غزة</h2>
+        <ul>
+          <li>
+            رقم الحساب: <code>1536080</code><br>
+            رقم الهاتف: <code>0594435646</code><br>
+            الاسم: محمود عادل مسلم
+          </li>
+        </ul>
+
       </section>
 
       <!-- Visa/MasterCard Section -->
       <section id="visa-mastercard" class="payment-details mt-5">
-        <h2>طرق الدفع الدولية (متاحة أيضًا محليًا)</h2>
-        <p>يرجى إدخال بيانات البطاقة لإتمام الدفع بأمان.</p>
+        <h2>الدفع الإلكتروني</h2>
+        <p>يمكنك الدفع بسهولة وأمان باستخدام فيزا أو ماستر كارد أو Apple Pay من خلال الرابط التالي:</p>
 
-        <form id="card-payment-form" class="mt-4" dir="rtl">
-          <div class="row mb-3">
-            <div class="col-md-6">
-              <label for="cardName" class="form-label">الاسم على البطاقة *</label>
-              <input type="text" id="cardName" name="cardName" class="form-control" required>
-            </div>
-            <div class="col-md-6">
-              <label for="cardNumber" class="form-label">رقم البطاقة *</label>
-              <input type="text" id="cardNumber" name="cardNumber" class="form-control" maxlength="19" placeholder="•••• •••• •••• ••••" required>
-            </div>
-          </div>
-
-          <div class="row mb-3">
-            <div class="col-md-4">
-              <label for="expiryDate" class="form-label">تاريخ الانتهاء *</label>
-              <input type="text" id="expiryDate" name="expiryDate" class="form-control" placeholder="MM/YY" required>
-            </div>
-            <div class="col-md-4">
-              <label for="cvv" class="form-label">رمز التحقق CVV *</label>
-              <input type="text" id="cvv" name="cvv" class="form-control" maxlength="4" placeholder="123" required>
-            </div>
-            <div class="col-md-4 d-flex align-items-end">
-              <button type="submit" class="btn btn-primary w-100">
-                <i class="bi bi-lock-fill me-2"></i> الدفع الآن
-              </button>
-            </div>
-          </div>
-        </form>
-
-        <p style="color: red; font-weight: bold; font-size: 1.1rem; margin-top: 20px;">
-          <i class="bi bi-arrow-down-circle-fill" style="margin-right: 8px;"></i>
-          يرجى أخذ لقطة شاشة لتأكيد الدفع وملء نموذج التسجيل أدناه. لا تنسى رفع إثبات الدفع.
-        </p>
+        <a href="https://secure-jordan.paytabs.com/payment/link/133307/6568223" 
+           target="_blank" 
+           class="btn btn-primary">
+           الانتقال إلى الدفع
+        </a>
       </section>
 
       <!-- Western Union Section -->
       <section id="western-union" class="payment-details mt-5">
         <h2>ويسترن يونيون</h2>
         <ul>
-          <li>الاسم باللغة العربية: فادي علي حسين الحساسنة</li>
-          <li>الاسم باللغة الإنجليزية: FADI ALI HUSSEIN AL-HASSASNEH</li>
+          <li>الاسم بالعربية: حسام زياد أحمد العبسي</li>
+          <li>الاسم بالإنجليزية: HUSSAM ZEYAD AHMED ALA'BSI</li>
         </ul>
-        <p style="color: red; font-weight: bold; font-size: 1.1rem; margin-top: 20px;">
-          <i class="bi bi-arrow-down-circle-fill" style="margin-right: 8px;"></i>
-          يرجى أخذ لقطة شاشة لعملية الدفع وملء نموذج التسجيل أدناه. لا تنسى رفع إثبات الدفع.
-        </p>
       </section>
-    </section>
+
 
     <!-- Enrollment Form -->
     <section class="mt-5">
@@ -658,8 +690,6 @@
         </div><!-- End Sidebar -->
       </div>
     </section>
-  </div>
-</section><!-- /Enroll Section -->
 
   </main>
 
@@ -786,5 +816,61 @@
     });
   });
 </script>
+<script>
+  // Firebase config
+  const firebaseConfig = {
+    apiKey: "AIzaSyBgj3M3tJTA0oQMGTyjmPWjljx7tJm8G6Y",
+    authDomain: "sc-galery.firebaseapp.com",
+    projectId: "sc-galery",
+    storageBucket: "sc-galery.appspot.com",
+    messagingSenderId: "274533300792",
+    appId: "1:274533300792:web:013a55d255d6059da884cd",
+  };
 
+  // init
+  const app = firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  const storage = firebase.storage();
+
+  // form submit
+  document.querySelector(".enrollment-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    try {
+      const form = e.target;
+
+      const file = document.getElementById("transferImage").files[0];
+
+      let imageUrl = "";
+
+      // رفع الصورة
+      if (file) {
+        const storageRef = storage.ref("payments/" + Date.now() + "_" + file.name);
+        await storageRef.put(file);
+        imageUrl = await storageRef.getDownloadURL();
+      }
+
+      // حفظ البيانات
+      await db.collection("enrollments").add({
+        fullNameArabic: form.fullNameArabic.value,
+        fullNameEnglish: form.fullNameEnglish.value,
+        phone: form.phone.value,
+        email: form.email.value,
+        paymentMethod: form.paymentMethod.value,
+        course: form.course.value,
+        country: form.country.value,
+        notes: form.Notes.value,
+        receipt: imageUrl,
+        createdAt: new Date()
+      });
+
+      alert("تم التسجيل بنجاح ✅");
+      form.reset();
+
+    } catch (error) {
+      console.error(error);
+      alert("صار خطأ ❌ حاول مرة ثانية");
+    }
+  });
+</script>
 </html>
